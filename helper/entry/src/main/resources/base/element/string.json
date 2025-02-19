@@ -11,6 +11,26 @@
     {
       "name": "EntryAbility_label",
       "value": "ArkUI助手3"
+    },
+    {
+      "name": "title1",
+      "value": "36"
+    },
+    {
+      "name": "title2",
+      "value": "24"
+    },
+    {
+      "name": "title3",
+      "value": "20"
+    },
+    {
+      "name": "title4",
+      "value": "16"
+    },
+    {
+      "name": "title5",
+      "value": "12"
     }
   ]
 }
