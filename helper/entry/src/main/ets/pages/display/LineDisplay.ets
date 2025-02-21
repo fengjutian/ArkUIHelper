@@ -59,6 +59,14 @@ export struct LineDisplay {
           Text('Column垂直方向上的排列').fontSize($r(`app.string.title3`)).fontWeight(FontWeight.Bold)
         }.width('100%')
         Image($rawfile(`LineDisplay/column_direction.png`)).height(300).width('100%')
+        Text(`
+          Column({}) {}
+          .width('100%')
+          .height(300)
+          .justifyContent(FlexAlign.Start)
+        `)
+
+
 
 
         Button('返回首页').onClick(() => {
@@ -66,7 +74,7 @@ export struct LineDisplay {
         })
       }.padding(10).width('100%').alignItems(HorizontalAlign.Start)
 
-    }.height('100%').border({width: 1})
+    }.height('100%')
       .scrollable(ScrollDirection.Vertical) // 滚动方向纵向
       .scrollBar(BarState.On) // 滚动条常驻显示
       .scrollBarColor(Color.Gray) // 滚动条颜色

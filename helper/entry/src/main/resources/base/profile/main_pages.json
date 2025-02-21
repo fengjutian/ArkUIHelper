@@ -1,6 +1,23 @@
 {
   "src": [
     "pages/Index",
-    "pages/display/LineDisplay"
+    "pages/display/LineDisplay",
+    "pages/display/StackDisplay",
+    "pages/display/FlexDisplay",
+    "pages/display/RelativeContainerDisplay",
+    "pages/display/ListDisplay",
+    "pages/display/GridDisplay",
+    "pages/display/TabsDisplay",
+    "pages/commonComp/ButtonComp",
+    "pages/commonComp/ImageComp",
+    "pages/commonComp/VideoComp",
+    "pages/TextComps/TextComp",
+    "pages/TextComps/InputComp",
+    "pages/TextComps/RichEditorComp",
+    "pages/DialogComps/DialogComp",
+    "pages/DialogComps/PopupComp",
+    "pages/DialogComps/ToastComp",
+    "pages/TabsList",
+    "pages/ArkUIPage"
   ]
 }
