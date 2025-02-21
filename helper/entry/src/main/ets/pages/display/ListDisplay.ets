@@ -1,20 +1,25 @@
+import { webview } from '@kit.ArkWeb';
+import { router } from '@kit.ArkUI';
+
+@Preview
 @Entry
 @Component
 struct ListDisplay {
   @State message: string = 'Hello World';
+  controller: webview.WebviewController = new webview.WebviewController();
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('ListDisplayHelloWorld')
-        .fontSize(50)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+    Column() {
+
+      Web({
+        src: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/arkts-layout-development-create-list-V5',
+        controller: this.controller
+      }).height('90%')
+
+      // Button('返回首页').onClick(() => {
+      //   router.back()
+      // })
+
     }
-    .height('100%')
-    .width('100%')
   }
 }

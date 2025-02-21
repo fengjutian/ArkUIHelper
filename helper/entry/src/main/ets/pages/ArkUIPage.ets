@@ -22,7 +22,7 @@ const APIList: APIListT[] = [
     { name: '相对布局 (RelativeContainer)', path: '', des: '', status: 0 },
     { name: '栅格布局 (GridRow/GridCol)', path: '', des: '', status: 0 },
     { name: '媒体查询 (@ohos.mediaquery)', path: '', des: '', status: 0 },
-    { name: '创建列表 (List)', path: '', des: '', status: 0 },
+    { name: '创建列表 (List)', path: 'pages/display/ListDisplay', des: '', status: 1 },
     { name: '创建网格 (Grid/GridItem)', path: '', des: '', status: 0 },
     { name: '创建轮播 (Swiper)', path: '', des: '', status: 0 },
     { name: '选项卡 (Tabs)', path: '', des: '', status: 0 }
@@ -105,8 +105,6 @@ export struct ArkUIPage {
 
   build() {
     Column(){
-
-
       List() {
         ForEach(APIList, (itemGroup: APIListT) => {
           if(itemGroup.name){
@@ -115,8 +113,11 @@ export struct ArkUIPage {
             }
           }
         })
-
       }
+
+      // Button('返回首页').onClick(() => {
+      //   router.back()
+      // })
     }
   }
 }

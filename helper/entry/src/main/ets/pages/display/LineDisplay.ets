@@ -66,9 +66,6 @@ export struct LineDisplay {
           .justifyContent(FlexAlign.Start)
         `)
 
-
-
-
         Button('返回首页').onClick(() => {
           router.back()
         })
