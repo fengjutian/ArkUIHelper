@@ -28,7 +28,6 @@ const APIList: APIListT[] = [
     { name: '选项卡 (Tabs)', path: '', des: '', status: 0 }
   ]},
   {name: '常用组件' , item: [
-
     { name: '按钮 (Button)', path: '', des: '', status: 0 },
     { name: '单选框 (Radio)', path: '', des: '', status: 0 },
     { name: '切换按钮 (Toggle)', path: '', des: '', status: 0 },
